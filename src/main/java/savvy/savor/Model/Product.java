@@ -36,4 +36,7 @@ public class Product {
     @LastModifiedDate
     LocalDateTime edited;
 
+    public String getNixItemId() {
+        return nixItemId;
+    }
 }
