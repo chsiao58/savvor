@@ -18,4 +18,9 @@ public class ProductService {
     public Product show(String nixItemId) {
         return productRepo.findByNixItemId(nixItemId);
     }
+
+    public Product create(Product product) {
+        productRepo.save(product);
+        return product;
+    }
 }
